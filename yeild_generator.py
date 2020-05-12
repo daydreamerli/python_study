@@ -4,7 +4,6 @@ def consumer(name):
     print("%s ready for steam bins!" %name)
     while True:
        baozi = yield
-
        print("Steam bin [%s] is coming,eaten by [%s]!" %(baozi,name))
 
 c = consumer("Carrie")
